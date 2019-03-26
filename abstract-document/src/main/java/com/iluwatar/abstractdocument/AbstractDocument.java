@@ -30,14 +30,14 @@ import java.util.function.Function;
 import java.util.stream.Stream;
 
 /**
- * Abstract implementation of Document interface
+ * 文档接口的抽象实现
  */
 public abstract class AbstractDocument implements Document {
 
   private final Map<String, Object> properties;
 
   protected AbstractDocument(Map<String, Object> properties) {
-    Objects.requireNonNull(properties, "properties map is required");
+    Objects.requireNonNull(properties, "属性集合是必需的不能为空");
     this.properties = properties;
   }
 
@@ -54,7 +54,8 @@ public abstract class AbstractDocument implements Document {
 
   @Override
   public <T> Stream<T> children(String key, Function<Map<String, Object>, T> constructor) {
-    Optional<List<Map<String, Object>>> any = Stream.of(get(key)).filter(el -> el != null)
+    @SuppressWarnings("unchecked")
+	Optional<List<Map<String, Object>>> any = Stream.of(get(key)).filter(el -> el != null)
         .map(el -> (List<Map<String, Object>>) el).findAny();
     return any.isPresent() ? any.get().stream().map(constructor) : Stream.empty();
   }

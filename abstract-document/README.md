@@ -1,29 +1,29 @@
 ---
-layout: pattern
-title: Abstract Document
-folder: abstract-document
-permalink: /patterns/abstract-document/
-categories: Structural
+布局: 模式
+title: 抽象文档
+文件夹: abstract-document
+永久地址: /patterns/abstract-document/
+分类 : 结构型模式
 tags: 
  - Java
- - Difficulty-Intermediate
+ - 难度-中级
 ---
 
-## Intent
-Achieve flexibility of untyped languages and keep the type-safety 
+##  目标
+实现了非类型化语言的灵活性，保证了类型的安全性
 
-![alt text](./etc/abstract-document.png "Abstract Document Traits and Domain")
+![alt text](./etc/abstract-document.png "抽象文档的特性和域")
 
 
-## Applicability
-Use the Abstract Document Pattern when
+## 适用范围
+在下列情况下可以使用抽象文档：
 
-* there is a need to add new properties on the fly
-* you want a flexible way to organize domain in tree like structure
-* you want more loosely coupled system
+* 在程序运行的时候添加一些属性（there is a need to add new properties on the fly）
+* 你想要一个灵活的方式来组织在树状结构的领域
+* 你想要更松散耦合的系统
 
 
 ## Credits
 
-* [Wikipedia: Abstract Document Pattern](https://en.wikipedia.org/wiki/Abstract_Document_Pattern)
-* [Martin Fowler: Dealing with properties](http://martinfowler.com/apsupp/properties.pdf)
+* [维基百科：抽象文档模式](https://en.wikipedia.org/wiki/Abstract_Document_Pattern)
+* [Martin Fowler: 处理属性](http://martinfowler.com/apsupp/properties.pdf)
