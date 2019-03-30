@@ -27,7 +27,7 @@ import java.util.Map;
 import com.iluwatar.abstractdocument.AbstractDocument;
 
 /**
- * Part entity
+ * 部件类型
  */
 public class Part extends AbstractDocument implements HasType, HasModel, HasPrice {
 

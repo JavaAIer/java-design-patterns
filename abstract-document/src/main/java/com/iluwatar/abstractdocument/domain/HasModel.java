@@ -27,7 +27,7 @@ import java.util.Optional;
 import com.iluwatar.abstractdocument.Document;
 
 /**
- * HasModel trait for static access to 'model' property
+ * 拥有模型特征是‘model’属性的静态入口（属性的静态入口就是给人感觉是确实写在类代码里面的属性一样）
  */
 public interface HasModel extends Document {
 

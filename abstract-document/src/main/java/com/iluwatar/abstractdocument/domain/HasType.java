@@ -27,7 +27,7 @@ import com.iluwatar.abstractdocument.Document;
 import java.util.Optional;
 
 /**
- * HasType trait for static access to 'type' property
+ * 拥有类型特性是'type'属性的静态入口
  */
 public interface HasType extends Document {
 

@@ -27,7 +27,7 @@ import java.util.stream.Stream;
 import com.iluwatar.abstractdocument.Document;
 
 /**
- * HasParts trait for static access to 'parts' property
+ * 拥有部件特性是'parts'属性的静态入口
  */
 public interface HasParts extends Document {
 

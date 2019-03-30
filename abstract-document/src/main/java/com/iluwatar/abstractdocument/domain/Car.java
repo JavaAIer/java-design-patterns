@@ -27,7 +27,7 @@ import java.util.Map;
 import com.iluwatar.abstractdocument.AbstractDocument;
 
 /**
- * Car entity
+ * 汽车类型
  */
 public class Car extends AbstractDocument implements HasModel, HasPrice, HasParts {
 

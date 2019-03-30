@@ -27,33 +27,33 @@ import java.util.function.Function;
 import java.util.stream.Stream;
 
 /**
- * Document interface
+ * 文档接口
  */
 public interface Document {
 
   /**
-   * Puts the value related to the key
+   * 给相关的属性设置值
    *
-   * @param key   element key
-   * @param value element value
-   * @return Void
+   * @param key   属性名称
+   * @param value 值
+   * @return Void 没有返回
    */
   Void put(String key, Object value);
 
   /**
-   * Gets the value for the key
+   * 获取一个属性的值
    *
-   * @param key element key
-   * @return value or null
+   * @param key 属性名称
+   * @return 属性值或空
    */
   Object get(String key);
 
   /**
-   * Gets the stream of child documents
+   * 获取子文档流
    *
-   * @param key         element key
-   * @param constructor constructor of child class
-   * @return child documents
+   * @param key       属性名称
+   * @param constructor 子类的构造函数
+   * @return 子文档
    */
   <T> Stream<T> children(String key, Function<Map<String, Object>, T> constructor);
 }

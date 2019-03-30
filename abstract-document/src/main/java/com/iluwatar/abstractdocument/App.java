@@ -40,7 +40,7 @@ import java.util.Map;
  * <p>
  * <p>
  * 在抽象文档模式中,({@link AbstractDocument}) 完全实现了
- * {@link Document}) 接口. 然后定义get和set(trait)，以支持以通常的静态方式访问属性。
+ * {@link Document}) 接口. 然后定义get和set(特性)，以支持以通常的静态方式访问属性。
  */
 public class App {
 
@@ -50,7 +50,7 @@ public class App {
    * 执行应用程序
    */
   public App() {
-    LOGGER.info("Constructing parts and car");
+    LOGGER.info("创建零件和车");
 
     Map<String, Object> carProperties = new HashMap<>();
     carProperties.put(HasModel.PROPERTY, "300SL");
@@ -78,9 +78,9 @@ public class App {
   }
 
   /**
-   * Program entry point
+   * 程序入口
    *
-   * @param args command line args
+   * @param args 命令行参数
    */
   public static void main(String[] args) {
     new App();
